@@ -129,7 +129,29 @@ body.open-menu {
 .nav__item:not(:last-child) {
     margin-bottom: 3rem;  
 }
-
+.cart__btn {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.cart__btn svg {
+    width: 3rem;
+    display: block;
+    margin-right: .5rem;
+    fill: var(--main-text-color);
+}
+.cart__btn .cart__span {
+    font-size: 2.2rem;
+    font-family: var(--title-font);
+    color: var(--main-text-color);
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
 @media screen and (min-width: 1440px) {
- 
+    .cart__btn {
+        display: flex;
+    }
 }
