@@ -13,68 +13,78 @@
 
 
   <div class="wrapper">
-     <div class="header__wrapper">
-        <div class="container">
-       
-       
-          <header class="header">
+    <div class="header__wrapper">
+      <div class="container">
+     
+     
+        <header class="header">
+         
            
-             
-              <div class="header__top">
-                <a href="./index.html" class="header__logo logo js_website-name"></a>
-                <div class="header-block">
-                  <button class="header__btn js_menu-btn">
-                    <span></span>
-                  </button>
-      
-                    <nav class="nav js_menu">
-                      <ul class="nav__list">
-                        <li class="nav__item">
-                          <a href="./purchase.html" class="nav__link">Terms of Purchase</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="./use.html" class="nav__link">Terms of Use</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="./contacts.html" class="nav__link">Contact Us</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="./privacy.html" class="nav__link">Privacy Notice</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="./return.html" class="nav__link">Return Policy</a>
-                        </li>
-                        <li class="nav__item">
-                          <a href="./shipping.html" class="nav__link">Shipping Policy</a>
-                        </li>
-                      </ul>
-                    </nav>
-                </div>
-   
-            
-            </div>
-          </header>
-       
-        </div>
+            <div class="header__top">
+              <a href="./index.html" class="header__logo logo js_website-name"></a>
+              <div class="header-block">
+                <button class="header__btn js_menu-btn">
+                  <span></span>
+                </button>
+    
+                  <nav class="nav js_menu">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="./purchase.html" class="nav__link">Terms of Purchase</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="./use.html" class="nav__link">Terms of Use</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="./contacts.html" class="nav__link">Contact Us</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="./privacy.html" class="nav__link">Privacy Notice</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="./return.html" class="nav__link">Return Policy</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="./shipping.html" class="nav__link">Shipping Policy</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+ 
+          
+          </div>
+        </header>
+     
       </div>
+    </div>
 
     <main class="main bg-main">
-      <div class="thank-you__wrapper" >
-        <section class="thank-you">
-          <div class="container">
-              <div class="block">
-                <h1 class="title">Thank you</h1>
-                <p class="text">Your order was completed successfully!</p>
-                <?php if($_GET["order_id"]){ ?> 
-      <p class="text" style="font-size: 3rem">Your Order ID is: <?php echo htmlspecialchars($_GET["order_id"]); ?></p>
-    <?php } ?>
-              </div>
-          </div>
-        </section>
-    </div>
+        <div class="text-section__wrapper white__wrapper">
+          <section class="text-section">
+            <div class="container">
+              <h1 class="title">Cancellation of Order</h1>
+              <form>
+                <p class="text">Please fill out the information below. After completing and submitting this form, 
+                  your account will be terminated and all billing will be stopped. Once the account has been cancelled, you will receive a cancellation email confirmation.
+                </p>
+                <label class="label js_label">
+                  <input type="text" class="input js_input" data-role="required" name="email" placeholder="Email">
+                </label>
+          
+                <label class="label js_label">
+                  <input type="text" class="input js_input" data-role="required" name="phone" placeholder="Phone Number">
+                </label>
+    
+                <label class="label js_label">
+                  <input type="text" class="input js_input" data-role="required" name="orderid" placeholder="Order Number">
+                </label>
+              </form> 
+            </div>
+          </section>
+      </div>
     </main>
 
-    
+   
 <div class="footer__wrapper">
   <footer class="footer">
   <div class="footer__wrapper--first">
