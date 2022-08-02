@@ -57,9 +57,7 @@
     margin-bottom: 3rem;
     position: relative;
 }
-.contacts .img {
-    max-width: 50rem;
-}
+
 
 
 
@@ -99,12 +97,7 @@
     border-bottom: .2rem solid var(--second-brand-color);
     transition: all .3s ease-in-out;
 }
-.policy__item .img {
-    display: block;
-    width: 100%;
-    max-width: 50rem;
-    margin: 0 auto 3rem;
-}
+
 
 @media screen and (min-width: 1440px)  {
     .hero {
@@ -128,19 +121,16 @@
     .policy__item {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-end;
+        padding: 0 13rem;
     }
     .policy__item:nth-child(2) {
-        flex-direction: row-reverse;
+        justify-content: flex-start;
     }
-    .policy__item .img {
-        height: 35rem;
-        object-fit: cover;
-        position: relative;
-        z-index: 2;
-    }
+
     .policy__block {
         position: relative;
+        margin: 0;
     }
     .policy-box {
         background-color: var(--third-brand-color);
@@ -214,10 +204,6 @@
     .contacts__list {
         text-align: right;
         margin-right: 10rem;
-        width: 50%;
-    }
-    .contacts .img {
-        margin: 0;
         width: 50%;
     }
     .contacts__item-link .text {
