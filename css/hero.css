@@ -130,7 +130,7 @@
 
     .policy__block {
         position: relative;
-        margin: 0;
+        /* margin: 0; */
     }
     .policy-box {
         background-color: var(--third-brand-color);
